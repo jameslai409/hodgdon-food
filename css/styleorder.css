@@ -1,0 +1,47 @@
+h1 {
+	font-family: Playfair Display;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 50px;
+}
+
+header {
+	display: flex;
+	align-items: center;
+}
+
+div img {
+	width: 225px;
+	height: 225px;
+}
+
+.grid-container {
+	display: grid;
+	grid-template-columns: 442px 442px 442px;
+	grid-template-rows: 241.5px 241.5px 241.5px;
+	margin: 5%;
+}
+
+.grid-item {display: flex;}
+
+a {text-decoration: none; color: #000;}
+
+a:hover {color: #F38A00;}
+
+h2 {
+	margin: 0px 24px;
+	font-weight: 800;
+	font: 18px Avenir;
+	line-height: 147.6%;
+	letter-spacing: 0.06em;
+}
+
+h3 {
+	font-family: Playfair Display;
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 32px;
+	letter-spacing: 0.06em;
+	color: #F38A00;
+	margin-left: 24px;
+}

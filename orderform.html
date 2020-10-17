@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset = "utf-8">
+		<title>Order Form</title>
+		<style type="text/css">
+			#name {
+				margin-left: 149px;
+				font-family: Avenir;
+				font-weight: 800;
+				font-size: 36px;
+				line-height: 147.6%;
+				letter-spacing: 0.06em;
+			}
+			#subtotal,#mealtax,#total {
+				margin: 15px 149px;
+				font-family: Avenir;
+				font-weight: 800;
+				font-size: 18px;
+				line-height: 147.6%;
+				letter-spacing: 0.06em;
+			}
+			input[type="button"] {
+				font-family: Avenir;
+				font-weight: 800;
+				font-size: 18px;
+			}
+			#confirm,#cancel {
+				width: 250px;
+				height: 49px;
+				border-radius: 6px;
+				margin-top: 10px;
+			}
+			#confirm {
+				margin-left: 149px;
+				background-color: #F38A00;
+				color: white;
+				border: #F38A00;
+			}
+			#cancel {
+				margin-left: 20px;
+				background-color: white;
+				color: #F38A00;
+				border: #F38A00 solid 2px;
+			}
+		</style>
+		<script language="javascript">
+			window.onload=function()
+			{
+				URL = window.location.href;
+				param = (URL.split('?')[1]).split("=")[1];
+				TAXRATE = 0.0625;
+
+				if (param == 1)
+				{
+					order = "Mediterranean Bowl with Pita";
+					price = 9.99;
+				}
+				else if (param == 2)
+				{
+					order = "Somerville Bagel with Cheese";
+					price = 4.99;
+				}
+				else if (param == 3)
+				{
+					order = "Grain Bowl with Tofu";
+					price = 11.99;
+				}
+				else if (param == 4)
+				{
+					order = "Burrito Bowl with Shredded Chicken";
+					price = 9.99;
+				}
+				else if (parem == 5)
+				{
+					order = "Bacon Egg & Cheese on Croissant";
+					price = 4.99;
+				}
+				else 
+				{
+					order = "Grilled Ground Beef Quesadilla with Cheese";
+					price = 11.99;
+				}
+
+				tax = price * TAXRATE;
+				total = tax + price;
+
+				subtotalStr = "Subtotal: $" + price;
+				mealtaxStr = "Meals Tax: $" + tax.toFixed(2);
+				totalStr = "Order Total: $" + total.toFixed(2);
+				document.getElementById("name").innerHTML = order;
+				document.getElementById("subtotal").innerHTML = subtotalStr;
+				document.getElementById("mealtax").innerHTML = mealtaxStr;
+				document.getElementById("total").innerHTML = totalStr;
+			}
+		</script>
+	</head>
+
+	<body>
+		<header>
+			<img style="margin: 100px 149px" src="images/logoSecondary.png"/ 
+				height="54" width="100">
+		</header>
+
+		<div id="name"></div>
+		<div id="subtotal"></div>
+		<div id="mealtax"></div>
+		<div style="margin-top: 63px" id="total"></div>
+
+		<form>
+			<input type="button" onclick="location.href='confirm.html';"
+				   value="CONFIRM" id="confirm">
+			<input type="button" onclick="location.href='order.html';"
+				   value="CANCEL" id="cancel">
+		</form>
+	</body>
+</html>
