@@ -5,8 +5,8 @@
 	<meta charset="utf-8">
 
 	<title>Contact Us</title>
-	<meta name="description" content="">
-	<meta name="author" content="">
+	<meta name="description" content="Page with info and forms where users can contact the business">
+	<meta name="author" content="James Lai">
 
 	<link rel="stylesheet" href="css/style.css">
 
@@ -27,11 +27,40 @@
 			/* justify-content: center;  */
 			/* align-items: center; */
 		}
+		
+		h1 {	
+			margin-bottom: 25px;
+			margin-top: 5% !important;
+		}
+
+		h2 {
+			margin-top: 0px !important;
+		}
+
+		h3 {	
+			font-family: Playfair Display;
+			font-style: normal;
+			font-weight: bold;
+			font-size: 20px;
+			/* line-height: 67px; */
+			/* letter-spacing: 0.06em; */
+			color: #3F4042;
+		}
+			
 	</style>
 
 	<script language="javascript">
+		function Feedback(name, email, comments) {
+			this.name = name;
+			this.email = email;
+			this.comments = comments;
+		}
+
 		function validate() {
-			let email = document.getElementById("email").value;
+			let fb = new Feedback(document.getElementById("name").value, document.getElementById("email").value, document.getElementById("feedback").value);
+
+			let email = fb['email'];
+
 			if (email.endsWith("@gmail.com")) {
 				alert("Thank you for your feedback!");
 				return true;
@@ -49,58 +78,61 @@
 
 <body>
 
-	<div class="wrapper">
-		<div style="margin-left: 25%;">
-			<h1>Contact Us</h1>
-			<p>
-				Have any questions about dining at Tufts? Or maybe suggestions for improvement? <br />
-				Let us know!<br />
-				Give us a call, or send us a quick email using the contact form below.<br />
-				We looking forward to hearing from you!
-			</p>
-			<img src="images/hodgemap.png" width="600"/>
+	<div class="child">
+		<div class="wrapper">
+			<div style="margin-left: 25%;">
+				<h1>Contact Us</h1>
+				<p>
+					Have any questions about dining at Tufts? Or maybe suggestions for improvement? <br />
+					Let us know!<br />
+					Give us a call, or send us a quick email using the contact form below.<br />
+					We looking forward to hearing from you!
+				</p>
+				<img src="images/hodgemap.png" width="700"/>
+			</div>
+			<div style="text-align: center;">
+				<h2>Address</h2>
+				<h3>
+					Tufts Dining Services <br />
+					89-91 Curtis Street <br />
+					Medford, MA 02155
+				</h3>
+				<h2>Hours</h2>
+				<h3>
+					Monday - Friday <br />
+					9:00 am to 5:00 pm <br />
+				</h3>
+				<h2>Contact</h2>
+				<h3>
+					Phone: <a href="tel:617-627-3566">617-627-3566</a> <br />
+					Fax: <a href="tel:617-627-3902">617-627-3902</a> <br />
+					Email: <a href="mailto:TuftsDining@tufts.edu">TuftsDining@tufts.edu</a> <br />
+				</h3>
+			</div>
+	 
+			
 		</div>
-		<div>
-			<h2>Address</h2>
-			<h3>
-				Tufts Dining Services <br />
-				89-91 Curtis Street <br />
-				Medford, MA 02155
-			</h3>
-			<br /><br />
-			<h2>Hours</h2>
-			<h3>
-				Monday - Friday <br />
-				9:00 am to 5:00 pm <br />
-			</h3>
-			<br /><br />
-			<h2>Contact</h2>
-			<h3>
-				Phone: <a href="tel:617-627-3566">617-627-3566</a> <br />
-				Fax: <a href="tel:617-627-3902">617-627-3902</a> <br />
-				Email: <a href="mailto:TuftsDining@tufts.edu">TuftsDining@tufts.edu</a> <br />
-			</h3>
-		</div>
- 
 		
+		<hr />
+	
+		<form class="feedback" action="#" method="POST" style="margin-top: 2%;" onsubmit="return validate()">
+			<p>Name:</p>
+			<input type="text" id="name" name="name" value="John Smith"><br /><br />
+			<p>Email: </p>
+			<input type="text" id="email" name="email" value="jsmith@gmail.com"><br /><br />
+			<p>Feedback: </p>
+			<textarea form="feedback" rows="5" cols=50 id="feedback">Type here</textarea>
+			<br /><br />
+			<input type="submit" value="Submit">
+			<p>*Note: For security reasons, we are only accepting feedback from valid Gmail accounts.</p>
+			<p>Make sure your email ends with "@gmail.com"</p>
+		</form>      
+		<div>
+	
+		</div>
+	
 	</div>
 	
-	<form class="feedback" action="#" method="POST" style="margin-top: 2%;" onsubmit="return validate()">
-		Name: <br />
-		<input type="text" id="name" name="name" value="John Smith"><br /><br />
-		Email: <br />
-		<input type="text" id="email" name="email" value="jsmith@gmail.com"><br /><br />
-		Feedback: <br />
-		<textarea form="feedback" rows="5" cols=50>Type here</textarea>
-		<br /><br />
-		<input type="submit" value="Submit">
-		<p>*Note: For security reasons, we are only accepting feedback from valid Gmail accounts.</p>
-		<p>Make sure your email ends with "@gmail.com"</p>
-	</form>      
-	<div>
-
-	</div>
-
 
   	<script src="js/script.js"></script>
 </body>

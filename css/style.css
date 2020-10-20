@@ -1,0 +1,56 @@
+div.child {
+    margin-left: 120px;
+    margin-right: 120px;
+}
+
+h1 {	
+    margin-bottom: 25px;
+    margin-top: 175px;
+
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 67px;
+    letter-spacing: 0.06em;
+    color: #3F4042;
+}
+
+h2 {	
+    margin-bottom: 25px;
+    margin-top: 175px;
+
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 67px;
+    letter-spacing: 0.06em;
+    color: #3F4042;
+}
+
+p { 	
+    font-family: Avenir;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: 0.05em;
+    color: #3F4042;
+}
+
+ul {
+    font-family: Avenir;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: 0.05em;
+    color: #3F4042;
+}
+
+hr {
+    height: 1px;
+    border: none;
+    background-color: #F38A00;
+}
