@@ -29,7 +29,7 @@ h2 {
     color: #3F4042;
 }
 
-p { 	
+.text-block { 	
     font-family: Avenir;
     font-style: normal;
     font-weight: normal;
@@ -49,8 +49,3 @@ ul {
     color: #3F4042;
 }
 
-hr {
-    height: 1px;
-    border: none;
-    background-color: #F38A00;
-}
