@@ -4,8 +4,8 @@ div.child {
 }
 
 h1 {	
-    margin-bottom: 25px;
-    margin-top: 175px;
+    /* margin-bottom: 25px;
+    margin-top: 175px; */
 
     font-family: Playfair Display;
     font-style: normal;
@@ -17,8 +17,8 @@ h1 {
 }
 
 h2 {	
-    margin-bottom: 25px;
-    margin-top: 175px;
+    /* margin-bottom: 25px;
+    margin-top: 175px; */
 
     font-family: Playfair Display;
     font-style: normal;
