@@ -4,8 +4,8 @@
 		grid-row-gap: 25px;
 	}
 	
-	h1,h2 {font: 2vw;}
-	h3 {font: 3vw};
+	h1,h2 {font: 3vw !important;}
+	h3 {font: 3vw !important};
 	
 	.is-mobile {display:block;}
 	.no-mobile {display:none;}
