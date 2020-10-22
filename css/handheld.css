@@ -5,10 +5,8 @@
 		grid-row-gap: 25px;
 	}
 	
-	h1,h2 {font: 3vw !important;}
-	h3 {font: 3vw !important};
-	
-	#confirm,#cancel {margin-left: 149px !important;}
+	h2 {font: 5vw Avenir;}
+	h3 {font: 6vw Playfair Display;}
 	
 	.is-mobile {display:block;}
 	.no-mobile {display:none;}

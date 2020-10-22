@@ -39,9 +39,8 @@ h2 {
 }
 
 h3 {
-	font-family: Playfair Display;
+	font: 24px Playfair Display;
 	font-weight: bold;
-	font-size: 24px;
 	line-height: 32px;
 	letter-spacing: 0.06em;
 	color: #F38A00;
