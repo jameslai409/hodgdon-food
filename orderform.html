@@ -2,6 +2,7 @@
 <html>
 	<head>
 		<meta charset = "utf-8">
+		<link rel="stylesheet" href="css/styleorder.css">
 		<title>Order Form</title>
 		<style type="text/css">
 			#name {
@@ -98,8 +99,9 @@
 
 	<body>
 		<header>
-			<img style="margin: 100px 149px" src="images/logoSecondary.png"/ 
-				height="54" width="100">
+			<img id='mobile'
+			     style="margin: 100px 149px" src="images/logoSecondary.png"/ 
+				 height="54" width="100">
 		</header>
 
 		<div id="name"></div>
@@ -107,11 +109,22 @@
 		<div id="mealtax"></div>
 		<div style="margin-top: 63px" id="total"></div>
 
-		<form>
+		<form class='no-mobile'>
 			<input type="button" onclick="location.href='confirm.html';"
 				   value="CONFIRM" id="confirm">
 			<input type="button" onclick="location.href='order.html';"
 				   value="CANCEL" id="cancel">
 		</form>
+
+		<form class='is-mobile'>
+			<input type="button" onclick="location.href='confirm.html';"
+				   value="CONFIRM" id="confirm"><br/>
+			<input type="button" onclick="location.href='order.html';"
+				   value="CANCEL" id="cancel">
+		</form>
+
+		<footer>
+      		<div>89-91 Curtis Street, Medford, MA 02155</div>
+   		</footer>
 	</body>
 </html>
