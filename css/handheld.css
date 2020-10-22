@@ -1,6 +1,7 @@
 @media screen and (max-device-width: 800px) {
 	.grid-container {
 		grid-template-columns: 100%;
+		grid-template-rows: auto;
 		grid-row-gap: 25px;
 	}
 	
