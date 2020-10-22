@@ -7,18 +7,20 @@
 	<title>Hodgdon Food</title>
 	<meta name="description" content="Home page for Hodgdon Food-on-the-Run">
 	<meta name="author" content="James Lai">
+	<meta name=‘viewport’ content=“width=device-width, initial-scale=1”>
 
 	<link rel="stylesheet" href="css/style.css">
 	<style>
 		.wrapper {
 			display: grid;
-			grid-template-columns: 2fr 1fr;
+			grid-template-columns: 1fr 1fr;
 			margin-left: 8%;
 			margin-right: 8%;
 			/* padding: 10%; */
 			align-items: center;
 			background-color: rgb(247, 238, 225);
-		}
+
+	  	}
 
 		.covidtext {
 			border: 4px solid rgba(196, 129, 4, 0.699);
@@ -28,6 +30,12 @@
 		.covidimage {
 			/* height: 10px; */
 			padding: 0px !important;
+		}
+
+		.foodimage {
+			max-width: 100%;
+			
+			height: auto;
 		}
 		
 		button {
@@ -44,13 +52,21 @@
 			margin: -4px;
 		}
 
+		@media (max-width: 1000px) {
+			.wrapper {
+				grid-template-columns: none;
+				margin-left: 4%;
+				margin-right: 4%;
+			}
+		}
+
 	</style>
 
 </head>
 
 <body>
-	<div class="wrapper child"> 
-		<div style="margin-left: 10%;">
+	<div class="wrapper"> 
+		<div style="margin-left: 4%; margin-right: 4%;">
 			<h1>
 				Hodgdon
 				<span>
@@ -60,12 +76,12 @@
 				Food-on-the-Run
 			</h1>
 			<div>
-				<p>
+				<p class="text-block">
 					Hodgdon is life made easy for people on the run. Students love the variety and flexibility of our food, and we always approach our service with a commitment to delicious food.
 					Need a snack after dinner hours? You've come to the right place.
 				</p>
 			</div>
-			<div style="margin-top: 12%; display: flex;justify-content: center; align-items: center;">
+			<div style="margin-bottom: 12%; display: flex;justify-content: center; align-items: center;">
 				<button type="button" onclick="location.href='covid.html'">
 					Read our COVID-19 Updates
 				</button>
@@ -86,7 +102,7 @@
 
 		</div>
 		<div>
-			<img src="images/food1.jpg" alt="Credits: https://tufts-admissions.s3.amazonaws.com/files/resources/dining.jpg"/>
+			<img src="images/food1.jpg" class="foodimage" alt="Credits: https://tufts-admissions.s3.amazonaws.com/files/resources/dining.jpg"/>
 		</div>
 	</div>
 

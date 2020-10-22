@@ -7,6 +7,7 @@
 	<title>Contact Us</title>
 	<meta name="description" content="Page with info and forms where users can contact the business">
 	<meta name="author" content="James Lai">
+	<meta name=‘viewport’ content=“width=device-width, initial-scale=1”>
 
 	<link rel="stylesheet" href="css/style.css">
 
@@ -46,6 +47,19 @@
 			/* letter-spacing: 0.06em; */
 			color: #3F4042;
 		}
+
+		.map {
+			max-width: 100%;
+			height: auto;
+		}
+
+		@media (max-width: 1000px) {
+			.wrapper {
+				grid-template-columns: none;
+				margin-left: 4%;
+				margin-right: 4%;
+			}
+		}
 			
 	</style>
 
@@ -78,17 +92,17 @@
 
 <body>
 
-	<div class="child">
+	<div>
 		<div class="wrapper">
-			<div style="margin-left: 25%;">
+			<div>
 				<h1>Contact Us</h1>
-				<p>
+				<p class="text-block">
 					Have any questions about dining at Tufts? Or maybe suggestions for improvement? <br />
 					Let us know!<br />
 					Give us a call, or send us a quick email using the contact form below.<br />
 					We looking forward to hearing from you!
 				</p>
-				<img src="images/hodgemap.png" width="700"/>
+				<img src="images/hodgemap.png" class="map" />
 			</div>
 			<div style="text-align: center;">
 				<h2>Address</h2>
@@ -116,16 +130,16 @@
 		<hr />
 	
 		<form class="feedback" action="#" method="POST" style="margin-top: 2%;" onsubmit="return validate()">
-			<p>Name:</p>
+			<p class="text-block">Name:</p>
 			<input type="text" id="name" name="name" value="John Smith"><br /><br />
-			<p>Email: </p>
+			<p class="text-block">Email: </p>
 			<input type="text" id="email" name="email" value="jsmith@gmail.com"><br /><br />
-			<p>Feedback: </p>
+			<p class="text-block">Feedback: </p>
 			<textarea form="feedback" rows="5" cols=50 id="feedback">Type here</textarea>
 			<br /><br />
 			<input type="submit" value="Submit">
-			<p>*Note: For security reasons, we are only accepting feedback from valid Gmail accounts.</p>
-			<p>Make sure your email ends with "@gmail.com"</p>
+			<p class="text-block">*Note: For security reasons, we are only accepting feedback from valid Gmail accounts.</p>
+			<p class="text-block">Make sure your email ends with "@gmail.com"</p>
 		</form>      
 		<div>
 	
