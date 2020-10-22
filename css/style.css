@@ -49,3 +49,11 @@ ul {
     color: #3F4042;
 }
 
+footer {
+    font: 15px Avenir !important; 
+    color: grey; 
+    position: fixed;
+    left: 5%;
+    bottom: 0; 
+    width: 100%;
+}
