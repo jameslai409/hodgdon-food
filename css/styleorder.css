@@ -57,7 +57,7 @@ footer {
     width: 100%;
 }
 
-@media screen and (max-width: 2000px) {
+@media screen and (max-width: 800px) {
 	.grid-container {
 		grid-template-columns: 100%;
 		grid-template-rows: 241.5px;
