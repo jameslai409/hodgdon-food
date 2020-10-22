@@ -1,0 +1,14 @@
+@media screen and (max-width: 800px) {
+	.grid-container {
+		grid-template-columns: 100%;
+		grid-template-rows: 241.5px;
+		grid-row-gap: 25px;
+	}
+
+	#subtotal,#mealtax,#total,#name {margin-left: 5% !important;}
+
+	#confirm,#cancel,#mobile {margin-left: 5% !important;}
+
+	.is-mobile {display:block;}
+	.no-mobile {display:none;}
+}
