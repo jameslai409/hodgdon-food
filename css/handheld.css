@@ -1,12 +1,19 @@
-@media screen and (max-device-width: 800px) {
-	.grid-container {
+@media screen and (max-device-width: 2000px) {
+	/*.grid-container {
 		grid-template-columns: 100%;
 		grid-template-rows: auto;
 		grid-row-gap: 25px;
+	}*/
+
+	.grid-container {
+		display: block;
+		margin: 10%;
 	}
+
+	.grid-item {margin: 30px 0px;}
 	
-	h2 {font: 5vw Avenir;}
-	h3 {font: 6vw Playfair Display;}
+	h2 {font: 4vw Avenir;}
+	h3 {font: 4.5vw Playfair Display;}
 	
 	.is-mobile {display:block;}
 	.no-mobile {display:none;}
