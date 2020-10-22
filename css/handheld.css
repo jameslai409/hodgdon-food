@@ -8,6 +8,8 @@
 	h1,h2 {font: 3vw !important;}
 	h3 {font: 3vw !important};
 	
+	#confirm,#cancel,#mobile {margin-left: 149px !important;}
+	
 	.is-mobile {display:block;}
 	.no-mobile {display:none;}
 }
