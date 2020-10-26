@@ -8,6 +8,7 @@
   <!-- <meta name="description" content=""> -->
   <!-- <meta name="author" content=""> -->
   <meta name=‘viewport’ content=“width=device-width, initial-scale=1”>
+  <!-- <link rel="stylesheet" href="css/styleorder.css"> -->
   <link rel="stylesheet" href="css/style.css">
   <style type="text/css">
   	  div.grandparent 
@@ -16,6 +17,8 @@
   		flex-direction: row;
   	  	margin-left: 120px;
   	  	margin-right: 120px;
+  	  	/*border: 3px solid blue;*/
+  	  	margin-top: 0px;
   	  }
 
   	  div.work-with-us-container 
@@ -23,36 +26,39 @@
   	  	display: flex;
   	  	flex-direction: column;
   	  	margin-right: 40px;
-  	  	margin-top: 125px;
+  	  	margin-top: 100px;
+  	  	/*border: 3px solid red;*/
 	   }
 
 	  div.student-image-div 
 	  {
-  		margin-top: 210px;
+  		margin-top: 140px;
+  		/*margin-bottom: 0px;*/
   		margin-left: 40px;
   		max-width: 100%;
+  		/*border: 3px solid black;*/
 	  }
 
   	  h2 
   	  {	
-		font-family: Playfair Display;
+		/*font-family: Playfair Display;
 		font-style: normal;
 		font-weight: bold;
 		font-size: 50px;
 		line-height: 67px;
 		letter-spacing: 0.06em;
-		color: #3F4042;
+		color: #3F4042;*/
   	  }
 
 	  p 
 	  { 	
-		font-family: Avenir;
+		/*font-family: Avenir;
 		font-style: normal;
 		font-weight: normal;
 		font-size: 18px;
 		line-height: 27px;
 		letter-spacing: 0.05em;
-		color: #3F4042;
+		color: #3F4042;*/
 	  }
 
 	  input.apply 
@@ -94,15 +100,15 @@
 		width: 40%;
 	  }
 		
-	  div.employeeText 
+	  #employeeTextDiv
 	  {
-		font-family: Avenir;
+		/*font-family: Avenir;
 		font-style: normal;
 		font-weight: normal;
 		font-size: 18px;
 		line-height: 27px;
 		letter-spacing: 0.05em;
-		color: #3F4042;
+		color: #3F4042;*/
 		display: block;
 		box-sizing: border-box;
 		margin-left: auto;
@@ -160,7 +166,7 @@
 			line-height: 80px;
 	    }
 
-	    p, div.employeeText
+	    .text-block, #employeeTextDiv
 	    {
 	    	text-align: center;
 	    	font-size: 40px;
@@ -185,13 +191,13 @@
 	    	width: 60%;
 	    }
 
-	    div.employeeText 
+	    #employeeTextDiv
 	  	{
 	  		width: 60%;
 	  	}
   </style>
 
-  <script langugae="javascript">
+  <script language="javascript">
   	window.onload = function()
 	{
 		document.getElementById("apply-button").onclick = 
@@ -221,20 +227,31 @@
 </head>
 
 <body>
+	<nav>
+		<div class="nav">
+			<div class="nav-item"><a href="index.html" >Home</a></div>
+			<div class="nav-item"><a href="order.html" >Order</a></div>
+			<div class="nav-item"><a href="products.html" >Products</a></div>
+			<div class="nav-item" id="logo"><a href="index.html"> <img src="images/logoSecondary.png"/></a></div>
+			<div class="nav-item"><a href="covid.html" >Covid</a></div>
+			<div class="nav-item" id="current-page"><a href="career.html" >Careers</a></div>
+			<div class="nav-item"><a href="contact.html" >Contact Us</a></div>
+		</div>
+	</nav>
 	<div class="grandparent">
 		<div class="work-with-us-container">
-			<div class="work-with-us-child ">
-				<h2 style="margin-bottom:15px;">
+			<!-- <div class="work-with-us-child "> -->
+				<h2 style="margin-bottom:15px; margin-top: 0px;">
 					Work with us
 				</h2>
-			</div>
-			<div class="work-with-us-child ">
-				<p>
+			<!-- </div> -->
+			<!-- <div class="work-with-us-child "> -->
+				<p class="text-block">
 			  		If you’re a student, we have jobs with flexible hours to be arranged around your academic schedule and extracurricular activities. And we’ve got lots of opportunities—for both employment and advancement.
 					<br/> <br/>
 					Tufts Dining employs nearly two hundred students in jobs such as general worker, student supervisor, café attendant, catering server, and student coordinator. Our wages are competitive, and we offer considerable flexibility.
 				</p>
-			</div>
+			<!-- </div> -->
 			<div class="work-with-us-child ">
 				<input class="apply" type="button" value="APPLY" id="apply-button">	
 			</div>
@@ -254,7 +271,7 @@
 	<br/>
 	<img class="employee" src="images/smiling-woman.jpg"/>
 	<br/>
-	<div class="employeeText">
+	<div class="text-block" id="employeeTextDiv">
 		October is Talia’s month! Talia has been indispensable at our mediterranean section, crafting the best bowls and being an uplifting presence behind the counter.
 	</div>
 	<br/>
