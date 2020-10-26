@@ -73,6 +73,14 @@
 			h1 {
 				text-align: center;
 			}
+
+			input {
+				font-size: 25px;
+			}
+
+			textarea {
+				font-size: 25px;
+			}
 		}
 
 		a {
@@ -209,11 +217,11 @@
 	
 		<form class="feedback" action="#" method="POST" style="margin-top: 2%;" onsubmit="return validate()">
 			<p class="text-block">Name:</p>
-			<input type="text" id="name" name="name" value="John Smith"><br /><br />
+			<input type="text" class="text-block" id="name" name="name" value="John Smith"><br /><br />
 			<p class="text-block">Email: </p>
-			<input type="text" id="email" name="email" value="jsmith@gmail.com"><br /><br />
+			<input type="text" class="text-block" id="email" name="email" value="jsmith@gmail.com"><br /><br />
 			<p class="text-block">Feedback: </p>
-			<textarea form="feedback" rows="5" cols=50 id="feedback">Type here</textarea>
+			<textarea form="feedback" class="text-block" rows="5" cols=50 id="feedback">Your burrito bowls are delicious!</textarea>
 			<br /><br />
 			<input type="submit" class="apply" value="SUBMIT">
 			<p class="text-block">*Note: For security reasons, we are only accepting feedback from valid Gmail accounts.</p>
