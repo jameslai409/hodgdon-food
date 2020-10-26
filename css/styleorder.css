@@ -3,6 +3,7 @@ h1 {
 	font-style: normal;
 	font-weight: bold;
 	font-size: 50px;
+	margin-top: 0px;
 }
 
 .is-mobile {display:none;}
@@ -10,23 +11,31 @@ h1 {
 header {
 	display: flex;
 	align-items: center;
+	margin-left: 120px;
+    margin-right: 120px;
 }
-
-/*div img {
-	width: 225px;
-	height: 225px;
-}*/
 
 .grid-container {
 	display: grid;
 	grid-template-columns: 33% 33% 33%;
-	grid-template-rows: 241.5px 241.5px 241.5px;
-	margin: 5%;
+	grid-template-rows: 241.5px 241.5px 0px;
+	/*grid-template-rows: 241.5px 241.5px 241.5px;*/
+	/*margin: 5%;*/
+	margin-left: 120px;
+    margin-right: 120px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
 }
 
-.grid-item {display: flex;}
+.grid-item {
+	display: flex;
+	margin-bottom: 10px;
+}
 
-a {text-decoration: none; color: #000;}
+a {
+	text-decoration: none;
+	color: #000;
+}
 
 a:hover {color: #F38A00;}
 
@@ -46,13 +55,3 @@ h4 {
 	color: #F38A00;
 	margin-left: 24px;
 }
-
-/*footer {
-    font: 15px Avenir !important; 
-    color: grey; 
-    position: fixed;
-    left: 5%;
-    bottom: 0; 
-    text-align: center;
-    width: 100%;
-}*/
