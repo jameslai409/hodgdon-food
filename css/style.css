@@ -4,9 +4,6 @@ div.child {
 }
 
 h1 {	
-    /* margin-bottom: 25px;
-    margin-top: 175px; */
-
     font-family: Playfair Display;
     font-style: normal;
     font-weight: bold;
@@ -14,13 +11,10 @@ h1 {
     line-height: 67px;
     letter-spacing: 0.06em;
     color: #3F4042;
-    
+
 }
 
 h2 {	
-    /* margin-bottom: 25px;
-    margin-top: 175px; */
-
     font-family: Playfair Display;
     font-style: normal;
     font-weight: bold;
@@ -53,9 +47,6 @@ ul {
 footer {
     font: 15px Avenir !important; 
     color: grey; 
-    /*position: fixed;
-    left: 5%;
-    bottom: 0; */
     text-align: center;
     width: 100%;
     margin-top: 100px;
@@ -67,15 +58,10 @@ footer {
     justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
-    /*margin-left: auto; 
-    margin-right: auto;*/
-    /*width: 35em; */
     margin-left: 120px;
     margin-right: 120px;
     margin-top: 50px;
     margin-bottom: 75px;
-    /*padding-bottom: 9px;*/
-    /*border: 3px solid blue;*/
 }
                 
 .nav-item {
@@ -88,38 +74,29 @@ footer {
 
     display: inline-block;
     list-style-type: none;
-    /*font-size: 180%;*/
     padding: 5px 20px 5px 20px;
     box-sizing: border-box;
-    /*border: 3px solid red;*/
-    /*color: #000;*/
-    text-align: center
+    text-align: center;
 }
                 
 .nav-item:hover {
-    /*border: 1px solid #333; */
     color: #F38A00; 
-    /*background-color: #a85232*/
+}
+
+.nav-mobile {
+    display: none;
+}
+
+.nav-item-mobile {
+    display: none;
+}
+
+.nav-image-mobile {
+    display: none;
 }
 
 #current-page {
     border-bottom: 2px solid rgba(243, 138, 0, 0.3); 
-    /*border-radius: 7px;*/
-    /*text-decoration: underline;
-    text-decoration-color: #F38A00 !important;
-    text-decoration-style: double;*/ 
-    /*line-height: 40px;*/
-}
-
-#logo {
-    /*padding-left: 5px;
-    padding-right: 5px;
-    padding-bottom: 0px;*/
-}
-
-#logo:hover {
-    background-color: #fff !important;
-
 }
                 
 nav a {
@@ -129,11 +106,44 @@ nav a {
 
 @media (max-width: 1000px) {
 .nav {
-    /*flex-direction: column;*/
+    display: none;
 }
 
 .nav-item {
     font-size: 30px;
+}
+
+.nav-mobile {
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 120px;
+    margin-right: 120px;
+}
+
+.nav-item-mobile {
+    font-family: Avenir;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 27px;
+    color: #000000;
+
+    display: inline-block;
+    list-style-type: none;
+    padding: 5px 20px 5px 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.nav-image-mobile {
+    display: inline-block;
+    list-style-type: none;
+    padding: 5px 20px 5px 20px;
+    box-sizing: border-box;
+    text-align: center;
 }
 
 
