@@ -60,7 +60,33 @@
 				margin-right: 4%;
 			}
 		}
+
+		a {
+			color: inherit;
+			text-decoration: none;
+		}
+
+		a:hover {
+			color: #aaaaaa;
+		}
 			
+		input.apply {
+			width: 253px;
+			height: 49px;
+			margin-top: 30px;
+			background-color: #F38A00;
+			color: #FFFFFF;
+			border: 1px solid #F38A00;
+			border-radius: 5px;
+			font-size: 15px;
+			outline: none;
+		}
+
+		input.apply:hover {
+			background-color: #D97B00;
+		}
+		
+		
 	</style>
 
 	<script language="javascript">
@@ -162,7 +188,7 @@
 			<p class="text-block">Feedback: </p>
 			<textarea form="feedback" rows="5" cols=50 id="feedback">Type here</textarea>
 			<br /><br />
-			<input type="submit" value="Submit">
+			<input type="submit" class="apply" value="SUBMIT">
 			<p class="text-block">*Note: For security reasons, we are only accepting feedback from valid Gmail accounts.</p>
 			<p class="text-block">Make sure your email ends with "@gmail.com"</p>
 		</form>      
