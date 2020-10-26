@@ -3,7 +3,7 @@ div.child {
     margin-right: 120px;
 }
 
-h1 {	
+h1 {    
     font-family: Playfair Display;
     font-style: normal;
     font-weight: bold;
@@ -14,7 +14,7 @@ h1 {
 
 }
 
-h2 {	
+h2 {    
     font-family: Playfair Display;
     font-style: normal;
     font-weight: bold;
@@ -24,7 +24,7 @@ h2 {
     color: #3F4042;
 }
 
-.text-block { 	
+.text-block {   
     font-family: Avenir;
     font-style: normal;
     font-weight: normal;
@@ -166,9 +166,11 @@ ul li {
     width: 125px;
 }
 
-footer {
-    font: 22px Avenir !important; 
+#current-page {
+    color: #F38A00; 
+    border-bottom: none;
 }
 
-
-
+footer {
+    font: 28px Avenir !important; 
+}
