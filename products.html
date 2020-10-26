@@ -1,109 +1,83 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-
   <title>Products</title>
-  <!-- <meta name="description" content=""> -->
-  <!-- <meta name="author" content=""> -->
-  <meta name=‘viewport’ content=“width=device-width, initial-scale=1”>
   <link rel="stylesheet" href="css/style.css">
-  <style type="text/css">
+  <link rel="stylesheet" href="css/styleorder.css">
+  <meta charset="UTF-8">
 
-	  
-<nav>
-	
-</nav>
 
 <style>
-	  
-  	  div.sustainablysourced 
-  	  {	
-  	  	display: flex;
-  	  	flex-direction: column;
-		margin-left: 10%;
-  	  	margin-right: 45%;
-  	  	margin-top: 125px;
-		  
-	   }
+  div.absolute {
+  position: absolute;
+  width: 900px;
+  height: 67px;
+  left: 103px;
+  top: 200px;
+  margin-right: 0;
 
-	  div.veggies 
-	  {
-	  display: flex;
-/*           width: 300px;
-	  height: 500px; */
-	  margin-left: 30%;
-	  margin-top: 20%;
-	  margin-right: 0%;
-	  }
+  font-family: Playfair Display;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 67px;
+  letter-spacing: 0.06em;
+  color: #3F4042;
+  }
 
-  	 
-	  h1 
-  	  {	
-		font-family: Playfair Display;
-		font-style: normal;
-		font-weight: bold;
-		font-size: 50px;
-		line-height: 67px;
-		letter-spacing: 0.06em;
-		color: #3F4042;
-  	  }
-	  
-	  
-	    
+  div.bodytext {
+  position: absolute;
+  width: 617px;
+  height: 567px;
+  left: 103px;
+  top: 330px;
 
-	  p 
-	  { 	
-		font-family: Avenir;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 18px;
-		line-height: 27px;
-		letter-spacing: 0.05em;
-		color: #3F4042;
-	  }
-	  
-	  img.vegetables 
-	  {
-		margin-right: 0%;
-	  }
+  font-family: Avenir;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 27px;
+  letter-spacing: 0.05em;
+  color: #3F4042;
+  }
 
-	  
-	  @media (max-width: 1000px)
-	  {
-	  	  
-		 div.sustainablysourced
-	    {
-	  		margin-top: 210px;
-	  		margin-left: 0px;
-	  		margin-right: 0px;
-	  		display: flex;
-	  		justify-content: center;
-	    }
-	  }
+  footer
+  {
+    margin-top: 1000px;
+  }
 
-	 
-	 
+  img.veggies {
+    position: absolute;
+    width: 620px;
+    height: 764px;
+    left: 820px;
+    top: 102px;
+  }
+
 </style>
 
+</head>
 
-
-  <body>
+<body>
     
-       	
-	  <div class="veggies">
-		<img class="vegetables" src="images/veggies.png"/>
-	  </div>
-    
+  <nav>
+    <div class="nav">
+      <div class="nav-item"><a href="index.html" >Home</a></div>
+      <div class="nav-item"><a href="order.html" >Order</a></div>
+      <div class="nav-item" id="current-page"><a href="products.html" >Products</a></div>
+      <div class="nav-item" id="logo"><a href="index.html"> <img src="images/logoSecondary.png"/></a></div>
+      <div class="nav-item"><a href="covid.html" >Covid</a></div>
+      <div class="nav-item"><a href="career.html" >Careers</a></div>
+      <div class="nav-item"><a href="contact.html" >Contact Us</a></div>
+    </div>
+  </nav>
+    <img class="veggies" src="images/veggies.png">
+    <div class="absolute">
 	   
-     
-   
-
-    
+      <h1>Sustainably Sourced</h1>
+    </div>
   
-<div class="sustainablysourced">
-	 <h1>Sustainably Sourced</h1>
+<div class="bodytext">
 <p>
 Fresh, whole, real food that’s good any way you look at it. That's what matters to us, too. We care where food comes from—and how it impacts the environment.
 By supporting organic and fair trade growers, buying local, and offering plenty of vegan and vegetarian choices, we’ve moved plans forward and are committed to serving sustainable food that benefits you and our planet.
@@ -124,7 +98,7 @@ Here are just a few of the ways Tufts Dining supports sustainability on campus:
 <br>
 ~ Certified fair trade organic coffee is available in all dining center locations.</p>
 </div>
-	 
+
 
   <footer>
       <div>89-91 Curtis Street, Medford, MA 02155</div>
