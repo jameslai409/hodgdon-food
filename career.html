@@ -8,6 +8,8 @@
   <!-- <meta name="description" content=""> -->
   <!-- <meta name="author" content=""> -->
   <meta name=‘viewport’ content=“width=device-width, initial-scale=1”>
+  <script src="http://code.jquery.com/jquery-3.5.1.slim.js" integrity="sha256-DrT5NfxfbHvMHux31Lkhxg42LY6of8TaYyK50jnxRnM=" crossorigin="anonymous"></script>
+
   <!-- <link rel="stylesheet" href="css/styleorder.css"> -->
   <link rel="stylesheet" href="css/style.css">
   <style type="text/css">
@@ -166,7 +168,22 @@
 	    #employeeTextDiv
 	  	{
 	  		width: 60%;
-	  	}
+		}
+		  
+		/* Credits to https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_image_shake for this function */
+		@keyframes shake {
+			0% { transform: translate(1px, 1px) rotate(0deg); }
+			10% { transform: translate(-1px, -2px) rotate(-1deg); }
+			20% { transform: translate(-3px, 0px) rotate(1deg); }
+			30% { transform: translate(3px, 2px) rotate(0deg); }
+			40% { transform: translate(1px, -1px) rotate(1deg); }
+			50% { transform: translate(-1px, 2px) rotate(-1deg); }
+			60% { transform: translate(-3px, 1px) rotate(0deg); }
+			70% { transform: translate(3px, 1px) rotate(-1deg); }
+			80% { transform: translate(-1px, -1px) rotate(1deg); }
+			90% { transform: translate(1px, 2px) rotate(0deg); }
+			100% { transform: translate(1px, -2px) rotate(-1deg); }
+		}
   </style>
 
   <script language="javascript">
@@ -264,6 +281,12 @@
 
 	<footer>
       <div>89-91 Curtis Street, Medford, MA 02155</div>
-    </footer>
+	</footer>
+	<script language="javascript">
+		$(".nav").mouseover(function() {
+			$(".nav :hover").css("animation", "shake 0.5s");
+			$(".nav :hover").css("animation-iteration-count", "4");
+		});
+	</script>
 </body>
 </html>
