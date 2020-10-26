@@ -106,14 +106,9 @@ nav a {
 
 @media (max-width: 1000px) {
 .text-block {   
-    /*font-family: Avenir;
-    font-style: normal;
-    font-weight: normal;*/
     font-size: 28px;
     line-height: 37px;
     text-align: center;
-    /*letter-spacing: 0.05em;
-    color: #3F4042;*/
 }
 
 ul li {
