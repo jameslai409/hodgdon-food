@@ -8,6 +8,7 @@
 	<meta name="description" content="Home page for Hodgdon Food-on-the-Run">
 	<meta name="author" content="James Lai">
 	<meta name=‘viewport’ content=“width=device-width, initial-scale=1”>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 	<link rel="stylesheet" href="css/style.css">
 	<style>
@@ -60,8 +61,11 @@
 			}
 		}
 
-	</style>
 
+	</style>
+	<script language="javascript">
+		// $('html,body').css('cursor', 'crosshair');
+	</script>
 </head>
 
 <body>
@@ -93,7 +97,7 @@
 				</p>
 			</div>
 			<div style="margin-bottom: 12%; display: flex;justify-content: center; align-items: center;">
-				<button type="button" onclick="location.href='covid.html'">
+				<button type="button" id="a" onclick="location.href='covid.html'">
 					Read our COVID-19 Updates
 				</button>
 				<!-- <button type="button">
