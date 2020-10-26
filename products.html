@@ -10,12 +10,14 @@
 
 <style>
   div.absolute {
-    position: absolute;
+    /*position: absolute;
     width: 900px;
     height: 67px;
     left: 103px;
     top: 200px;
-    margin-right: 0;
+    margin-right: 0;*/
+    margin-bottom: 25px;
+    margin-top: 5% !important;
 
     font-family: Playfair Display;
     font-style: normal;
@@ -26,12 +28,20 @@
     color: #3F4042;
   }
 
+  .main {
+    display: flex; 
+    justify-content: 
+    space-between; 
+    align-items: center;
+  }
+
   div.bodytext {
-    position: absolute;
-    width: 617px;
-    height: 567px;
-    left: 103px;
-    top: 280px;
+    /*position: absolute;*/
+    /*width: 617px;*/
+    width: 40%;
+    margin-left: 10%;
+    /*left: 103px;*/
+    /*top: 280px;*/
 
     font-family: Avenir;
     font-style: normal;
@@ -42,17 +52,13 @@
     color: #3F4042;
   }
 
-  footer
-  {
-    margin-top: 750px;
-  }
-
   img.veggies {
-    position: absolute;
-    width: 620px;
-    height: 764px;
-    left: 820px;
-    top: 102px;
+    /*position: absolute;*/
+    /*width: 620px;*/
+    width: 50%;
+    /*height: 764px;*/
+    /*left: 820px;*/
+    /*top: 102px;*/
   }
 
 
@@ -69,6 +75,24 @@
     80% { transform: translate(-1px, -1px) rotate(1deg); }
     90% { transform: translate(1px, 2px) rotate(0deg); }
     100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
+
+  @media (max-width: 1300px) {
+        .main {
+            display: block;
+        }
+
+        img.veggies {
+          width: 100%;
+        }
+
+        div.bodytext {
+          margin: 10%;
+          width: 80%;
+        }
+  
+        .is-mobile {display:block;}
+        .no-mobile {display:none;}
   }
 
 </style>
@@ -102,37 +126,42 @@
         <div class="nav-item-mobile"><a href="contact.html" >Contact Us</a></div>
       </div>
   </nav>
-    <img class="veggies" src="images/veggies.png">
+
     <div class="absolute">
-      <h1>Sustainably Sourced</h1>
+        <h1 style="margin-left: 10%;">Sustainably Sourced</h1>
     </div>
-  
-<div class="bodytext">
-<p>
-Fresh, whole, real food that’s good any way you look at it. That's what matters to us, too. We care where food comes from—and how it impacts the environment.
-By supporting organic and fair trade growers, buying local, and offering plenty of vegan and vegetarian choices, we’ve moved plans forward and are committed to serving sustainable food that benefits you and our planet.
-Here are just a few of the ways Tufts Dining supports sustainability on campus:
-<br>
-<br>
-~ We serve a variety of organic and sustainably sourced foods.
-<br>
-~ We use local seasonal produce and locally caught wild fish.
-<br>
-~ We purchase from dozens of local vendors.
-<br>
-~ Our bananas are Rainforest Alliance certified.
-<br>
-~ Our compostable napkins are made from unbleached and recycled fibers.
-<br>
-~ We compost food waste in all dining centers and cafés.
-<br>
-~ Certified fair trade organic coffee is available in all dining center locations.</p>
-</div>
+    <div class="main">
+        <div class="bodytext">
+        <p>
+        Fresh, whole, real food that’s good any way you look at it. That's what matters to us, too. We care where food comes from—and how it impacts the environment.
+        By supporting organic and fair trade growers, buying local, and offering plenty of vegan and vegetarian choices, we’ve moved plans forward and are committed to serving sustainable food that benefits you and our planet.
+        Here are just a few of the ways Tufts Dining supports sustainability on campus:
+        <br>
+        <br>
+        ~ We serve a variety of organic and sustainably sourced foods.
+        <br>
+        ~ We use local seasonal produce and locally caught wild fish.
+        <br>
+        ~ We purchase from dozens of local vendors.
+        <br>
+        ~ Our bananas are Rainforest Alliance certified.
+        <br>
+        ~ Our compostable napkins are made from unbleached and recycled fibers.
+        <br>
+        ~ We compost food waste in all dining centers and cafés.
+        <br>
+        ~ Certified fair trade organic coffee is available in all dining center locations.</p>
+        </div>
+        <img class="veggies" src="images/veggies.png">
+    </div>
 
-
-  <footer>
-      <div>89-91 Curtis Street, Medford, MA 02155</div>
+  <footer style="margin-top: 70px">
+      <div>MAILING: 89-91 Curtis Street, Medford, MA 02155</div>
+      <div>CALL US: 617-627-3566</div>
+      <div>INSTAGRAM: @tuftsdining</div>
+      <div>© 2020 TUFTS UNIVERSITY</div>
   </footer>
+
 	<script language="javascript">
 		$(".nav").mouseover(function() {
 			$(".nav :hover").css("animation", "shake 0.5s");

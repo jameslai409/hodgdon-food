@@ -4,34 +4,84 @@
 	<meta charset="utf-8"> 
 	<meta name=‘viewport’ content=“width=device-width, initial-scale=1”>
 	<title>Order Confirmed</title>
+    <link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/styleorder.css">
-	<link rel="stylesheet" href="css/handheld.css" media="screen and (max-device-width:800px)">
+	<script src="http://code.jquery.com/jquery-3.5.1.slim.js" integrity="sha256-DrT5NfxfbHvMHux31Lkhxg42LY6of8TaYyK50jnxRnM=" crossorigin="anonymous"></script>
+
 	<style type="text/css">
 		h1 {
 			color: #F38A00;
-			margin-left: 149px;
+			margin-left: 10%;
 		}
 		h4 {
-			margin-left: 149px;
+			margin-left: 10%;
 			font-weight: 800;
 			font: 18px Avenir;
 			line-height: 147.6%;
 			letter-spacing: 0.06em;
 		}
+		@keyframes shake {
+			0% { transform: translate(1px, 1px) rotate(0deg); }
+			10% { transform: translate(-1px, -2px) rotate(-1deg); }
+			20% { transform: translate(-3px, 0px) rotate(1deg); }
+			30% { transform: translate(3px, 2px) rotate(0deg); }
+			40% { transform: translate(1px, -1px) rotate(1deg); }
+			50% { transform: translate(-1px, 2px) rotate(-1deg); }
+			60% { transform: translate(-3px, 1px) rotate(0deg); }
+			70% { transform: translate(3px, 1px) rotate(-1deg); }
+			80% { transform: translate(-1px, -1px) rotate(1deg); }
+			90% { transform: translate(1px, 2px) rotate(0deg); }
+			100% { transform: translate(1px, -2px) rotate(-1deg); }
+		}
 	</style>
 </head>
 
 <body>
-	<header>
-		<img style="margin: 100px 149px" src="images/logoSecondary.png"/ 
+	<!-- <header>
+		<img style="margin: 100px 0px;" src="images/logoSecondary.png"/ 
 		     height="54" width="100">
-	</header>
+	</header> -->
+	<nav>
+	  <div class="nav">
+        <div class="nav-item"><a href="index.html" >Home</a></div>
+        <div class="nav-item" id="current-page"><a href="order.html" >Order</a></div>
+        <div class="nav-item"><a href="products.html" >Products</a></div>
+        <div class="nav-item" ><a href="index.html"> <img src="images/logoSecondary.png"/></a></div>
+        <div class="nav-item"><a href="covid.html" >Covid</a></div>
+        <div class="nav-item" ><a href="career.html" >Careers</a></div>
+        <div class="nav-item"><a href="contact.html" >Contact Us</a></div>
+      </div>
+
+      <div class="nav-mobile" style="margin-top: 50px; margin-bottom: 18px;">
+        <div class="nav-item-mobile"><a href="index.html" >Home</a></div>
+        <div class="nav-item-mobile" id="current-page"><a href="order.html" >Order</a></div>
+        <div class="nav-item-mobile"><a href="products.html" >Products</a></div>
+      </div>
+      <div class="nav-mobile" style="margin-bottom: 10px;">
+        <div class="nav-image-mobile"><a href="index.html"> <img src="images/logoSecondary.png"/></a></div>
+      </div>
+      <div class="nav-mobile" style="margin-bottom: 75px;">
+        <div class="nav-item-mobile"><a href="covid.html" >Covid</a></div>
+        <div class="nav-item-mobile" ><a href="career.html" >Careers</a></div>
+        <div class="nav-item-mobile"><a href="contact.html" >Contact Us</a></div>
+      </div>
+    </nav>
 
 	<h1>Order Confirmed!</h1>
 	<h4>Pick up time is in 30 minutes.</h4>
 
-	<footer>
-      		<div>89-91 Curtis Street, Medford, MA 02155</div>
-    	</footer>
+	<footer style="position: fixed; bottom: 0;">
+      	<div>MAILING: 89-91 Curtis Street, Medford, MA 02155</div>
+      	<div>CALL US: 617-627-3566</div>
+      	<div>INSTAGRAM: @tuftsdining</div>
+      	<div>© 2020 TUFTS UNIVERSITY</div>
+	</footer>
+
+	<script language="javascript">
+		$(".nav").mouseover(function() {
+			$(".nav :hover").css("animation", "shake 0.5s");
+			$(".nav :hover").css("animation-iteration-count", "4");
+		});
+	</script>
 </body>
 </html>
