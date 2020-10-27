@@ -1,0 +1,15 @@
+@media screen and (max-device-width: 800px) {
+
+	.grid-container {
+		display: block;
+		margin: 10%;
+	}
+
+	.grid-item {margin: 30px 0px;}
+	
+	h2 {font: 3vw Avenir;}
+	h3 {font: 3.5vw Playfair Display;}
+	
+	.is-mobile {display:block;}
+	.no-mobile {display:none;}
+}

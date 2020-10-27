@@ -19,8 +19,6 @@ header {
 	display: grid;
 	grid-template-columns: 33% 33% 33%;
 	grid-template-rows: 241.5px 241.5px 0px;
-	/*grid-template-rows: 241.5px 241.5px 241.5px;*/
-	/*margin: 5%;*/
 	margin-left: 120px;
     margin-right: 120px;
     margin-bottom: 0px;

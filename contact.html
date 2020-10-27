@@ -18,16 +18,11 @@
 			grid-template-columns: 2fr 1fr;
 			margin-left: 8%;
 			margin-right: 8%;
-			/* padding: 10%; */
 			align-items: center;
-			/* background-color: rgb(247, 238, 225); */
 		}
 
 		.feedback {
 			text-align: center;
-			/* display: flex; */
-			/* justify-content: center;  */
-			/* align-items: center; */
 		}
 		
 		h1 {	
@@ -44,8 +39,6 @@
 			font-style: normal;
 			font-weight: bold;
 			font-size: 20px;
-			/* line-height: 67px; */
-			/* letter-spacing: 0.06em; */
 			color: #3F4042;
 		}
 
@@ -62,26 +55,6 @@
 	        margin-left: 90px;
 	        margin-right: 90px;
       	}
-
-		@media (max-width: 1000px) {
-			.wrapper {
-				grid-template-columns: none;
-				margin-left: 4%;
-				margin-right: 4%;
-			}
-
-			h1 {
-				text-align: center;
-			}
-
-			input {
-				font-size: 25px;
-			}
-
-			textarea {
-				font-size: 25px;
-			}
-		}
 
 		a {
 			color: inherit;
@@ -106,6 +79,33 @@
 
 		input.apply:hover {
 			background-color: #D97B00;
+		}
+
+		@media (max-width: 1000px) {
+			.wrapper {
+				grid-template-columns: none;
+				margin-left: 4%;
+				margin-right: 4%;
+			}
+
+			h1 {
+				text-align: center;
+			}
+
+			input {
+				font-size: 25px;
+			}
+
+			textarea {
+				font-size: 25px;
+			}
+
+			input.apply 
+	  		{
+				font-size: 30px;
+				width: 350px;
+				height: 75px;
+	  		}
 		}
 		
 		/* Credits to https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_image_shake for this function */
@@ -181,7 +181,9 @@
 	<div>
 		<div class="wrapper">
 			<div>
+				<header>
 				<h1>Contact Us</h1>
+				</header>
 				<p class="text-block">
 					Have any questions about dining at Tufts? Or maybe suggestions for improvement? <br />
 					Let us know!<br />
